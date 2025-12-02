@@ -8,13 +8,23 @@
    <div class="">
   <h1 id="hello">Hello Welcome !</h1>
      <button id="chbtn">Change</button>
+         <button id="reset">Change</button>
    </div>
 
     <script>
+      let ortxt = document.getElementById("hello");
+      
       let chbtn = document.getElementById("chbtn");
+      let reset = document.getElementById("reset");
+      
       chbtn.addEventListener("click", () =>{
       document.getElementById("hello").innerText="Hello Welcome to India";
         });
+      
+      reset.addEventListener("click", () =>{
+        document.getElementById("hello").innerText= hello;
+      });
+      
     </script>
   </body>
 </html>
