@@ -7,10 +7,14 @@
   <body>
    <div class="">
   <h1 id="hello">Hello Welcome !</h1>
+     <button id="chbtn">Change</button>
    </div>
 
     <script>
+      let chbtn = document.getElementById("chbtn");
+      chbtn.addEventListener(click, () =>{
       document.getElementById("hello").innerText="Hello Welcome to India";
+        }
     </script>
   </body>
 </html>
