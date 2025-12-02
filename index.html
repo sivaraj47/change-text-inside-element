@@ -27,7 +27,10 @@
       
       chbtn.addEventListener("click", () =>{
           hello.innerText="Hello Welcome to India";
-        alert("Text Lenght:"+ hello.innerText.length);
+        setTimeout(()=>{
+           alert("Text Lenght:"+ hello.innerText.length);
+        },0);
+       
         });
       
       reset.addEventListener("click", () =>{
