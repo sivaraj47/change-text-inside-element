@@ -30,14 +30,15 @@
       chbtn.addEventListener("click", () =>{
           hello.innerText="Hello Welcome to India";
         setTimeout(()=>{
-          msg.innerText="Text Lenght:"+ hello.innerText.length;
+          msg.innerText="Change Text Lenght:"+ hello.innerText.length;
         },2000);
        
-        });
-      
+        });      
       reset.addEventListener("click", () =>{
         hello.innerText= ortxt;
-         alert("Text Lenght:"+ hello.innerText.length);
+        setTimeout(() => {
+         msg.innerText=" Text Length:" hello.innerText.length;
+        }, 2000);
       });
       
     </script>
