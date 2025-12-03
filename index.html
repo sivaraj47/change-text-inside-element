@@ -15,6 +15,7 @@
   <body>
    <div class="chel">
   <h1 id="hello">Hello Welcome !</h1>
+     <p id="msg"></p>
      <button id="chbtn">Change</button>
          <button id="reset">Reset</button>
    </div>
@@ -24,11 +25,12 @@
       let ortxt = hello.innerText;
       let chbtn = document.getElementById("chbtn");
       let reset = document.getElementById("reset");
+      let msg = document.getElementById("msg");
       
       chbtn.addEventListener("click", () =>{
           hello.innerText="Hello Welcome to India";
         setTimeout(()=>{
-           alert("Text Lenght:"+ hello.innerText.length);
+          msg.innerText="Text Lenght:"+ hello.innerText.length;
         },2000);
        
         });
